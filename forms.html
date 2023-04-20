@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        .color {
+            border-color: rgb(243, 36, 219);
+            border-width: 2px;
+        }
+
+        .text{
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body style="text-align: center; padding: 10px; background-color: rgb(252, 217, 241);">
+    <h2 style="font-style: italic; color:rgb(243, 36, 219);">Forms</h2>
+    <br>
+    <form> <!--action="php.admin"-->
+        <label class="text" for="name">Enter your name:</label>
+        <input class="color" type="text" id="name" placeholder="eg.John Doe"> 
+        <br><br><br>
+        <!-- For and id have a relationship. -->
+        <label class="text" for="mail">Enter your mail:</label>
+        <input class="color" type="mail" id="mail" placeholder="eg.johndoe@mail.com">
+        <br><br><br>
+        <label class="text" for="password">Enter your password:</label>
+        <input class="color" type="password" id="password">
+        <br> <br><br>
+        <label class="text" for="name">Select your gender:</label>
+        <input type="radio" name="sex" id="f"> Female
+        <input type="radio" name="sex" id="m"> Male
+        <input type="radio" name="sex" id="o"> Other
+        <!--We add name and id's for backend processes. When we need data from php, we write queeries with these. For example, bring me sex data or bring me females etc.-->
+        <!--We add the same name, because when user selects something, the others cannot be selected.-->
+        <br><br><br>
+        <label class="text" for="education">Select your education:</label>
+        <select class="color" name="education" id="ed">
+            <option value="None" selected>-select-</option>
+            <option value="Elementary">Elementary</option>
+            <option value="High School">High School</option>
+            <option value="College">College</option>
+            <option value="Master's Degree">Master's Degree</option>
+            <option value="Higher Education">Higher Education</option>
+        </select>
+        <br><br><br>
+        <label class="text" for="skills">Please select your skills:</label> <br><br>
+        <input type="checkbox" name="skills" value=".NET">.NET<br>
+        <input type="checkbox" name="skills" value="Java">Java<br>
+        <input type="checkbox" name="skills" value="Json">Json<br>
+        <input type="checkbox" name="skills" value="MySQL">MySQL<br>
+        <input type="checkbox" name="skills" value="Ruby">Ruby<br>
+        <input type="checkbox" name="skills" value="Python">Python<br>
+        <input type="checkbox" name="skills" value="Git">Git<br>
+        <br><br>
+        <label class="text" for="contact">Contact us:</label> <br><br>
+        <textarea class="color" placeholder="Type something!" name="text_box" cols="30" rows="10"></textarea>
+        <br><br>
+        <button class="color" type="submit">Submit</button>
+        <button class="color" type="reset">Reset</button> <br>
+    </form>
+
+</body>
+
+</html>
