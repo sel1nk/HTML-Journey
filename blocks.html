@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Elements Notes</title>
+    <style>
+        body {
+            background-image: url(images/v1013-p-0009a.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .nav{
+            background-color: rgba(163, 241, 144, 0.589);
+            height: 50px;
+            text-align: center;
+        }
+        .nav2{
+            background-color: rgba(165, 42, 42, 0.441);
+            height: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1 style="font-style: italic;">Welcome to my Notes</h1>
+        <hr style="border-bottom-color: aquamarine; border-top-color: blueviolet;">
+        <p>Ok so as you know, I am new to all this. That's why, I will be using this page as a form of a notebook. I
+            need to
+            be able to remember what I have learned, am I wrong?</p>
+        <p>It has been tiring for me to add a proper bakground here. I adjusted the image so that it would cover the
+            hole
+            page via size, I ensured there will be no repeats, so it will be a single picture.
+            I also fixed it. We implement these kinds of things in between heads I guess. Because that's what we had
+            done
+            with tables. I wrote the code by adding style. It is not hard to learn, but it is easy to forget... </p>
+        <hr style="border-bottom-color: aquamarine; border-top-color: blueviolet;">
+        <p>If you use a block element, it will cover the whole block. You cannot add another element next to it, as you
+            will not
+            have enough space for it.</p>
+        <p>On the other hand, if you use an in-line element, you can add new in-line elements next to it. It will not
+            take over
+            the whole space.</p>
+        <h1 style="font-style: italic;">Let's get to examples</h1>
+    </center>
+    <h3 style="font-style: italic;">Block Elements</h3>
+    <div style="background-color: rgba(0, 0, 255, 0.311);text-align: center;">This is a block element.</div>
+    <div style="background-color: rgba(95, 158, 160, 0.374); text-align: center;">This one also. Covers the entire space.</div>
+
+    <h3 style="font-style: italic;">In-Line Elements</h3>
+    <span style="background-color: rgba(222, 184, 135, 0.6);">This is in-line.</span>
+    <span style="background-color: rgba(127, 255, 212, 0.368);">In-line #2 is here.</span>
+    <hr style="border-bottom-color: rgb(215, 70, 135); border-top-color: rgb(102, 73, 248) ;">
+    <div class="nav"> 
+        <div>Trying</div>
+        <div>Block</div>
+        <div>Elements</div>
+        <div>Now</div>
+    </div>
+    <br>
+    <p>Hmm, all these blocks cannot fit in each other. This is not a good practice. Let's try again.</p>
+    <div class="nav2">
+        <span>Trying</span>
+        <span>In-line</span>
+        <span>Elements</span>
+        <span>Now</span>
+    </div>
+   
+
+
+
+
+</body>
+
+</html>
